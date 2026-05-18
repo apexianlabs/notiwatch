@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'NotiWatch — Monitor any page for changes automatically',
-  description: 'Monitor any page for changes automatically',
+  title: 'NotiWatch — Monitor any webpage for changes and get notified the moment something updates.',
+  description: 'Monitor any webpage for changes and get notified the moment something updates.',
 }
 export default function RootLayout({ children }) {
   return (
