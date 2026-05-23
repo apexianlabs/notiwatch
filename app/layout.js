@@ -1,4 +1,5 @@
 export const metadata = {
+  icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
   title: 'NotiWatch — Monitor any webpage for changes and get notified the moment something updates.',
   description: 'Monitor any webpage for changes and get notified the moment something updates.',
 }
