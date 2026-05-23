@@ -2,16 +2,19 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 
-const Logo = ({ size = 32, color = '#ea580c', initial = 'N' }) => (
+const Logo = ({ size = 32 }) => (
   <svg width={size} height={size} viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
     <defs>
-      <linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stopColor={color} stopOpacity="0.9"/>
-        <stop offset="100%" stopColor={color} stopOpacity="0.6"/>
+      <linearGradient id="nw1" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stopColor="#fb923c"/>
+        <stop offset="100%" stopColor="#c2410c"/>
       </linearGradient>
     </defs>
-    <rect width="100" height="100" rx="22" fill="url(#lg1)"/>
-    <text x="50" y="68" textAnchor="middle" fontSize="52" fontWeight="900" fontFamily="Arial,sans-serif" fill="white">{initial}</text>
+    <path d="M50 12 C50 12 48 12 48 14 C37 16 28 26 28 40 L28 62 L20 70 L80 70 L72 62 L72 40 C72 26 63 16 52 14 C52 12 50 12 50 12Z" fill="url(#nw1)"/>
+    <path d="M43 70 Q43 78 50 78 Q57 78 57 70Z" fill="url(#nw1)"/>
+    <circle cx="70" cy="25" r="12" fill="#fef2f2" stroke="#dc2626" strokeWidth="2"/>
+    <line x1="70" y1="19" x2="70" y2="27" stroke="#dc2626" strokeWidth="3" strokeLinecap="round"/>
+    <circle cx="70" cy="31" r="2" fill="#dc2626"/>
   </svg>
 )
 
